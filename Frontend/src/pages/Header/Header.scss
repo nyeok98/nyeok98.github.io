@@ -1,0 +1,45 @@
+.header {
+    width: 100vw;
+    background-color: #0B4500;
+    &.root {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    &.etc {
+        height: 5rem;
+        margin-top: 3rem;
+    }
+
+    a {
+        font-size: 5rem;
+        color: #fff;
+        background-color: #0B4500;
+        position: relative;
+        height: 8rem;
+    }
+
+    .menu {
+        margin-top: -40%;
+        transition-duration: 1000ms;
+        p {
+            text-align: center;
+            color: transparent;
+            font-size: 1rem;
+            transition-delay: 100ms;
+            transition-timing-function: ease-in-out;
+        }
+
+        &.open {
+            margin-top: 3rem;
+            p {
+                color: #fff;
+            }
+        }
+    }
+}
